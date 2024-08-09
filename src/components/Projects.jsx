@@ -1,15 +1,42 @@
 import React from "react";
 import music from "./images/music-player.png";
+import eduford from "./images/eduford.png";
+import udemy from "./images/udemy.png";
+import zaydn from "./images/zaydn.png"
 
 function Projects() {
   return (
     <div>
       <div className="row">
-        <div className="col-3 d-flex align-items-center project_div">
+        <div className="col-4 mb-4 project_div">
           <div className="box border border-2">
             <img src={music} alt="" className="img-fluid project_img" />
             <a href="https://musicplayer-ri2xbx4j6-jasvinderkheras-projects.vercel.app/" target="blank" className="nav-link">
               Music Player
+            </a>
+          </div>
+        </div>
+        <div className="col-4 mb-4 project_div">
+        <div className="box border border-2">
+            <img src={eduford} alt="" className="img-fluid project_img" />
+            <a href="https://jasvinderkhera.github.io/eduford_university/" target="blank" className="nav-link">
+              EduFord University
+            </a>
+          </div>
+        </div>
+        <div className="col-4 mb-4 project_div">
+        <div className="box border border-2">
+            <img src={udemy} alt="" className="img-fluid project_img" />
+            <a href="https://jasvinderkhera.github.io/udemy_clone/" target="blank" className="nav-link">
+              Udemy
+            </a>
+          </div>
+        </div>
+        <div className="col-4 mb-4 project_div">
+        <div className="box border border-2">
+            <img src={zaydn} alt="" className="img-fluid project_img" />
+            <a href="https://jasvinderkhera.github.io/portfolio/zaydn/index.html" target="blank" className="nav-link">
+              Zaydn
             </a>
           </div>
         </div>

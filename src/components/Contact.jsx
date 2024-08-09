@@ -84,6 +84,7 @@ function Contact() {
               name="gender"
               value="Male"
               onChange={handleChange}
+              className="me-2"
             />
             Male
           </label>
@@ -93,6 +94,7 @@ function Contact() {
               name="gender"
               value="Female"
               onChange={handleChange}
+               className="me-2"
             />
             Female
           </label>
@@ -106,6 +108,7 @@ function Contact() {
               value="html"
               checked={data.skills.html}
               onChange={handleChange}
+               className="me-2"
             />
             HTML
           </label>
@@ -117,6 +120,7 @@ function Contact() {
               value="css"
               checked={data.skills.css}
               onChange={handleChange}
+               className="me-2"
             />
             CSS
           </label>
@@ -128,6 +132,7 @@ function Contact() {
               value="javascript"
               checked={data.skills.javascript}
               onChange={handleChange}
+               className="me-2"
             />
             Javascript
           </label>
@@ -139,6 +144,7 @@ function Contact() {
               value="reactjs"
               checked={data.skills.reactjs}
               onChange={handleChange}
+               className="me-2"
             />
             ReactJS
           </label>
@@ -150,6 +156,7 @@ function Contact() {
               value="jquery"
               checked={data.skills.jquery}
               onChange={handleChange}
+               className="me-2"
             />
             JQuery
           </label>
