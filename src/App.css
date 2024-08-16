@@ -23,9 +23,12 @@ body {
 
 .project_img{
     height: 200px;
-    width: 200px;
+    width: 230px;
 }
 .project_div{
     height: 250px;
     width: 250px;
+}
+.project_row{
+  margin-left: 70px;
 }
