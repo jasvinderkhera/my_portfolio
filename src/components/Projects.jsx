@@ -2,7 +2,8 @@ import React from "react";
 import music from "./images/music-player.png";
 import eduford from "./images/eduford.png";
 import udemy from "./images/udemy.png";
-import zaydn from "./images/zaydn.png"
+import zaydn from "./images/zaydn.png";
+import flatmate from "./images/flatmate.png"
 
 function Projects() {
   return (
@@ -37,6 +38,14 @@ function Projects() {
             <img src={zaydn} alt="" className="img-fluid project_img text-center" />
             <a href="https://jasvinderkhera.github.io/portfolio/zaydn/index.html" target="blank" className="nav-link bg-secondary text-white">
               Zaydn
+            </a>
+          </div>
+        </div>
+        <div className="col-4 mb-4 project_div">
+        <div className="box border border-2">
+            <img src={flatmate} alt="" className="img-fluid project_img text-center" />
+            <a href="https://jasvinderkhera.github.io/flatmate/index.html" target="blank" className="nav-link bg-secondary text-white">
+              FlatMate
             </a>
           </div>
         </div>
