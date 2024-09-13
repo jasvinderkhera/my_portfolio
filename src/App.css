@@ -32,3 +32,10 @@ body {
 .project_row{
   margin-left: 70px;
 }
+
+
+@media screen and (max-width:768px) {
+  .nav-link {
+    padding: 5px 8px;
+  }
+}
