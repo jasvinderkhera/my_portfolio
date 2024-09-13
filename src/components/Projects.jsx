@@ -49,6 +49,14 @@ function Projects() {
             </a>
           </div>
         </a>
+        <a href="https://flatmatefrontend.vercel.app/" target="blank" className="col-4 mb-4 project_div nav-link">
+        <div className="box border border-2">
+            <img src={flatmate} alt="" className="img-fluid project_img text-center" />
+            <a href="https://flatmatefrontend.vercel.app/" target="blank" className="nav-link bg-secondary text-white">
+              FlatMate-Frontend
+            </a>
+          </div>
+        </a>
       </div>
     </div>
   );
