@@ -4,6 +4,7 @@ import eduford from "./images/eduford.png";
 import udemy from "./images/udemy.png";
 import zaydn from "./images/zaydn.png";
 import flatmate from "./images/flatmate.png"
+import legal from "./images/legal.png"
 
 function Projects() {
   return (
@@ -53,7 +54,15 @@ function Projects() {
         <div className="box border border-2">
             <img src={flatmate} alt="" className="img-fluid project_img text-center" />
             <a href="https://flatmatefrontend.vercel.app/" target="blank" className="nav-link bg-secondary text-white">
-              FlatMate-Frontend
+              FlatMate-React
+            </a>
+          </div>
+        </a>
+        <a href="https://legal-so.vercel.app/" target="blank" className="col-4 mb-4 project_div nav-link">
+        <div className="box border border-2">
+            <img src={legal} alt="" className="img-fluid project_img text-center" />
+            <a href="https://legal-so.vercel.app/" target="blank" className="nav-link bg-secondary text-white">
+              Legal.So
             </a>
           </div>
         </a>

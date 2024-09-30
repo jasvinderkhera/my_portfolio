@@ -38,4 +38,13 @@ body {
   .nav-link {
     padding: 5px 8px;
   }
+  .project_row{
+    margin: auto;
+  }
+  .project_div{
+    width: 100%;
+  }
+  .project_img{
+    width: 100%;
+  }
 }

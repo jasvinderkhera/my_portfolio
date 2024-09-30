@@ -17,7 +17,7 @@ function App() {
         <div className="row">
           <div className="col-md-3">
             <div className="border p-2 rounded">
-              <div className="p-4 text-center p-4">
+              <div className="p-4 text-center">
                 <img src={dp} className="img-fluid rounded-circle mb-2" alt="" />
                 <h4 className="mb-0">Jasvinder Khera</h4>
                 <h6 className="fw-light">Frontend Developer/UI/UX Designer</h6>
