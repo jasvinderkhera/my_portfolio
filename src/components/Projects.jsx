@@ -5,6 +5,7 @@ import udemy from "./images/udemy.png";
 import zaydn from "./images/zaydn.png";
 import flatmate from "./images/flatmate.png"
 import legal from "./images/legal.png"
+import crud_operations from "./images/crud_operations.png"
 
 function Projects() {
   return (
@@ -63,6 +64,14 @@ function Projects() {
             <img src={legal} alt="" className="img-fluid project_img text-center" />
             <a href="https://legal-so.vercel.app/" target="blank" className="nav-link bg-secondary text-white">
               Legal.So
+            </a>
+          </div>
+        </a>
+        <a href="https://basic-crud-frontend-eight.vercel.app/" target="blank" className="col-4 mb-4 project_div nav-link">
+        <div className="box border border-2">
+            <img src={crud_operations} alt="" className="img-fluid project_img text-center" />
+            <a href="https://basic-crud-frontend-eight.vercel.app/" target="blank" className="nav-link bg-secondary text-white">
+              CRUD Operations
             </a>
           </div>
         </a>
