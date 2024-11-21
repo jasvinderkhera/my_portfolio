@@ -6,6 +6,7 @@ import zaydn from "./images/zaydn.png";
 import flatmate from "./images/flatmate.png";
 import legal from "./images/legal.png";
 import crud_operations from "./images/crud_operations.png";
+import etsy from "./images/etsy.png"
 
 function Projects() {
   return (
@@ -100,6 +101,22 @@ function Projects() {
               className="nav-link bg-secondary text-white"
             >
               EduFord University
+            </a>
+          </div>
+        </a>
+        <a
+          href="https://etsy-clone-mu.vercel.app/"
+          target="blank"
+          className="col-4 mb-4 project_div nav-link"
+        >
+          <div className="box border border-2">
+            <img src={etsy} alt="" className="img-fluid project_img" />
+            <a
+              href="https://etsy-clone-mu.vercel.app/"
+              target="blank"
+              className="nav-link bg-secondary text-white"
+            >
+              Etsy
             </a>
           </div>
         </a>
