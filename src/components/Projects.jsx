@@ -122,14 +122,14 @@ function Projects() {
         </a>
 
         <a
-          href="https://musicplayer-ri2xbx4j6-jasvinderkheras-projects.vercel.app/"
+          href="https://musicplayer-xi-eight.vercel.app/"
           target="blank"
           className="col-4 mb-4 project_div nav-link"
         >
           <div className="box border border-2">
             <img src={music} alt="" className="img-fluid project_img" />
             <a
-              href="https://musicplayer-ri2xbx4j6-jasvinderkheras-projects.vercel.app/"
+              href="https://musicplayer-xi-eight.vercel.app/"
               target="blank"
               className="nav-link bg-secondary text-white"
             >
