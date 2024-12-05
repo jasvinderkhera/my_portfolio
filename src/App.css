@@ -34,6 +34,19 @@ body {
 }
 
 
+.api_cheatsheet_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.api_cheatsheet_container object{
+  height: 400px;
+  width: 350px;
+  object-fit: contain;
+}
+
+
 @media screen and (max-width:768px) {
   .nav-link {
     padding: 5px 8px;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import cv from '../components/images/cv.pdf'
 
 function Contact() {
   function initialState() {
@@ -182,6 +183,20 @@ function Contact() {
           <button className="btn btn-primary">Submit</button>
         </div>
       </form>
+
+
+      <div className="container d-flex justify-content-center align-items-center">
+      <div className="api_cheatsheet_container">
+      <object
+              data={cv}
+              type="application/pdf"
+            >
+              alt : <a href="Curricullum Vitae.pdf">Curricullum Vitae.pdf</a>
+            </object>
+      </div>
+        
+      
+      </div>
     </div>
   );
 }

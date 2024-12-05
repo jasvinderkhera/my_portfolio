@@ -66,7 +66,7 @@ function App() {
                     className="nav-link"
                     activeClassName="active"
                   >
-                    Contact
+                    Contact/Resume
                   </NavLink>
                 </div>
                 <div className="list-group-item">
