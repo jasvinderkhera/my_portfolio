@@ -4,10 +4,12 @@ function Qualifications() {
   return (
     <div>
     <div className='display-6 mb-3'>Qualifications</div>
-    <p>Bachelors of Science from Monad University. <br />
-      Diploma in Information Technology from Lal Bahadur Shashtri Training Institute. <br />
-      
-    </p>
+    <ul>
+      <li className="mb-2">Web Design from TGC India (2023-2024)</li>
+      <li className="mb-2">Diploma in Information Technology from Lal Bahadur Shashtri Training Institute. (2019)</li>
+      <li className="mb-2">Bachelors of Science from Monad University. (2016-2019)</li>
+      <li className="mb-2">Senior Secondary (Science PCM) from CBSE (2016)</li>
+    </ul>
     </div>
   )
 }

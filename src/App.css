@@ -46,6 +46,16 @@ body {
   object-fit: contain;
 }
 
+.mob-menu{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.79);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
 
 @media screen and (max-width:768px) {
   .nav-link {
@@ -60,4 +70,10 @@ body {
   .project_img{
     width: 100%;
   }
+
+  .menu img{
+    height: 60px;
+    width: 60px;
+  }
+
 }

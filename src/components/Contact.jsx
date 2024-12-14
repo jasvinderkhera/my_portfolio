@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cv from '../components/images/cv.pdf'
+import cv from '../components/images/CV.pdf'
 
 function Contact() {
   function initialState() {
@@ -191,7 +191,7 @@ function Contact() {
               data={cv}
               type="application/pdf"
             >
-              alt : <a href="Curricullum Vitae.pdf">Curricullum Vitae.pdf</a>
+              alt : <a href="./images/cv.pdf">Curricullum Vitae.pdf</a>
             </object>
       </div>
         
