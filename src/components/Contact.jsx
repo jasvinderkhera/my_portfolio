@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cv from '../components/images/CV.pdf'
+import cv from '../images/cv.pdf'
 
 function Contact() {
   function initialState() {
