@@ -13,6 +13,8 @@ function About() {
           <li>JQuery</li>
           <li>Bootstrap</li>
           <li>React.Js</li>
+          <li>Tailwind CSS</li>
+          <li>React Native Expo</li>
         </ul>
     </div>
   )
