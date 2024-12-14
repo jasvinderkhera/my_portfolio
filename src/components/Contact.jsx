@@ -191,7 +191,6 @@ function Contact() {
               data={cv}
               type="application/pdf"
             >
-              alt : <a href="./images/CV.pdf">Curricullum Vitae.pdf</a>
             </object>
       </div>
         
