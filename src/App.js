@@ -15,6 +15,13 @@ function App() {
 
   const [menu, setMenu] = useState('hide')
 
+  const openModal = ()=>{
+    document.body.classList.add('modal-open')
+  }
+  const closeModal = ()=>{
+    document.body.classList.remove('modal-open')
+  }
+
   return (
     <BrowserRouter>
       <div className="container py-4">
@@ -28,7 +35,7 @@ function App() {
                 <h4 className="mb-0">Jasvinder Khera</h4>
                 <h6 className="fw-light">Frontend Developer/UI/UX Designer</h6>
                 </div>
-                <div className="mob-menu-btn d-block d-md-none" onClick={()=>setMenu('show')}>
+                <div className="mob-menu-btn d-block d-md-none" onClick={()=> {setMenu('show'); openModal()}}>
                   <img src={menubtn} alt="" className="img-fluid" style={{height:'24px', width:"24px"}}/>
                 </div>
 
@@ -110,12 +117,13 @@ function App() {
         </div>
         <div className={ menu === "show" ? "mob-menu d-block" : "mob-menu d-none"}>
                 <div className="inner-mob-menu d-flex align-items-start flex-column pt-5">
-                <Link to={'/about'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>setMenu('hide')}>About</Link>
-                <Link to={'/skills'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>setMenu('hide')}>Skills</Link>
-                <Link to={'/qualifications'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>setMenu('hide')}>Qualification</Link>
-                <Link to={'/experience'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>setMenu('hide')}>Work Experience</Link>
-                <Link to={'/contact'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>setMenu('hide')}>Contact/Resume</Link>
-                <Link to={'/projects'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>setMenu('hide')}>Projects</Link>
+                <p className="nav-link text-white px-4 py-3 fs-3 mb-0" onClick={()=>{setMenu('hide'); closeModal()}}>X</p>
+                <Link to={'/about'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>About</Link>
+                <Link to={'/skills'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Skills</Link>
+                <Link to={'/qualifications'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Qualification</Link>
+                <Link to={'/experience'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Work Experience</Link>
+                <Link to={'/contact'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Contact/Resume</Link>
+                <Link to={'/projects'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Projects</Link>
                 </div>
                 </div>
       </div>

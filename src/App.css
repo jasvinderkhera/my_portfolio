@@ -33,6 +33,9 @@ body {
   margin-left: 70px;
 }
 
+.modal-open{
+  overflow: hidden;
+}
 
 .api_cheatsheet_container{
   display: flex;
