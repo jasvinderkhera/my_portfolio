@@ -7,6 +7,9 @@ import flatmate from "./images/flatmate.png";
 import legal from "./images/legal.png";
 import crud_operations from "./images/crud_operations.png";
 import etsy from "./images/etsy.png"
+import taskhive from "./images/task-hive.png"
+import cloudlinker from "./images/cloud-linker.png"
+import krishisahayak from "./images/krishisahayak.png"
 
 function Projects() {
   return (
@@ -32,6 +35,70 @@ function Projects() {
             </a>
           </div>
         </a>
+
+        <a
+          href="https://cloud-linker.vercel.app/"
+          target="blank"
+          className="col-4 mb-4 project_div nav-link"
+        >
+          <div className="box border border-2">
+            <img
+              src={cloudlinker}
+              alt=""
+              className="img-fluid project_img text-center"
+            />
+            <a
+              href="https://cloud-linker.vercel.app/"
+              target="blank"
+              className="nav-link bg-secondary text-white"
+            >
+              Cloud Linker
+            </a>
+          </div>
+        </a>
+
+        <a
+          href="https://krishisahayak.vercel.app/"
+          target="blank"
+          className="col-4 mb-4 project_div nav-link"
+        >
+          <div className="box border border-2">
+            <img
+              src={krishisahayak}
+              alt=""
+              className="img-fluid project_img text-center"
+            />
+            <a
+              href="https://krishisahayak.vercel.app/"
+              target="blank"
+              className="nav-link bg-secondary text-white"
+            >
+              KrishiSahayak
+            </a>
+          </div>
+        </a>
+
+        <a
+          href="https://taskhive-project.vercel.app/"
+          target="blank"
+          className="col-4 mb-4 project_div nav-link"
+        >
+          <div className="box border border-2">
+            <img
+              src={taskhive}
+              alt=""
+              className="img-fluid project_img text-center"
+            />
+            <a
+              href="https://taskhive-project.vercel.app/"
+              target="blank"
+              className="nav-link bg-secondary text-white"
+            >
+              TaskHive
+            </a>
+          </div>
+        </a>
+
         <a
           href="https://legal-so.vercel.app/"
           target="blank"
@@ -158,6 +225,7 @@ function Projects() {
             </a>
           </div>
         </a>
+
       </div>
     </div>
   );
