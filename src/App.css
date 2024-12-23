@@ -33,8 +33,8 @@ body {
   margin-left: 70px;
 }
 
-.modal-open{
-  overflow: hidden;
+.modal-body{
+  min-height: 100vh;
 }
 
 .api_cheatsheet_container{

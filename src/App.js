@@ -10,17 +10,31 @@ import menubtn from '../src/components/images/menu.png'
 import './App.css';
 import Projects from "./components/Projects";
 import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
   const [menu, setMenu] = useState('hide')
+  const [modalVisible, setModalVisible] = useState(false);
 
-  const openModal = ()=>{
-    document.body.classList.add('modal-open')
-  }
-  const closeModal = ()=>{
-    document.body.classList.remove('modal-open')
-  }
+
+
+
+  const handleOpenModal = () => {
+    setModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalVisible(false);
+  };
+
+  // const openModal = ()=>{
+  //   document.body.classList.add('modal-open')
+  // }
+  // const closeModal = ()=>{
+  //   document.body.classList.remove('modal-open')
+  // }
 
   return (
     <BrowserRouter>
@@ -35,7 +49,7 @@ function App() {
                 <h4 className="mb-0">Jasvinder Khera</h4>
                 <h6 className="fw-light">Frontend Developer/UI/UX Designer</h6>
                 </div>
-                <div className="mob-menu-btn d-block d-md-none" onClick={()=> {setMenu('show'); openModal()}}>
+                <div className="mob-menu-btn d-block d-md-none" onClick={()=> {handleOpenModal()}}>
                   <img src={menubtn} alt="" className="img-fluid" style={{height:'24px', width:"24px"}}/>
                 </div>
 
@@ -115,16 +129,20 @@ function App() {
             </div>
           </div>
         </div>
-        <div className={ menu === "show" ? "mob-menu d-block" : "mob-menu d-none"}>
+        <div>
+               <Modal show={modalVisible} onHide={handleCloseModal} >
+                <Modal.Body>
                 <div className="inner-mob-menu d-flex align-items-start flex-column pt-5">
-                <p className="nav-link text-white px-4 py-3 fs-3 mb-0" onClick={()=>{setMenu('hide'); closeModal()}}>X</p>
-                <Link to={'/about'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>About</Link>
-                <Link to={'/skills'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Skills</Link>
-                <Link to={'/qualifications'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Qualification</Link>
-                <Link to={'/experience'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Work Experience</Link>
-                <Link to={'/contact'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Contact/Resume</Link>
-                <Link to={'/projects'} className="nav-link text-white px-3 py-3 fs-5" onClick={()=>{setMenu('hide'); closeModal()}}>Projects</Link>
+                <p className="nav-link px-4 py-3 fs-3 mb-0" onClick={()=>{handleCloseModal()}}>X</p>
+                <Link to={'/about'} className="nav-link px-3 py-3 fs-5" onClick={()=>{handleCloseModal()}}>About</Link>
+                <Link to={'/skills'} className="nav-link px-3 py-3 fs-5" onClick={()=>{handleCloseModal()}}>Skills</Link>
+                <Link to={'/qualifications'} className="nav-link px-3 py-3 fs-5" onClick={()=>{handleCloseModal()}}>Qualification</Link>
+                <Link to={'/experience'} className="nav-link px-3 py-3 fs-5" onClick={()=>{handleCloseModal()}}>Work Experience</Link>
+                <Link to={'/contact'} className="nav-link px-3 py-3 fs-5" onClick={()=>{handleCloseModal()}}>Contact/Resume</Link>
+                <Link to={'/projects'} className="nav-link px-3 py-3 fs-5" onClick={()=>{handleCloseModal()}}>Projects</Link>
                 </div>
+                </Modal.Body>
+               </Modal>
                 </div>
       </div>
     </BrowserRouter>
