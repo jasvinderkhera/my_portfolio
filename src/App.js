@@ -29,13 +29,6 @@ function App() {
     setModalVisible(false);
   };
 
-  // const openModal = ()=>{
-  //   document.body.classList.add('modal-open')
-  // }
-  // const closeModal = ()=>{
-  //   document.body.classList.remove('modal-open')
-  // }
-
   return (
     <BrowserRouter>
       <div className="container py-4">

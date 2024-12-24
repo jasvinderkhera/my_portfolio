@@ -25,6 +25,15 @@ function Experience() {
       <li className='pb-2'>Integrated <strong>Firebase Realtime Database</strong> for efficient file uploading and retrieval, ensuring that documents and images are safely stored in the database.</li>
       <li className='pb-2'>Ensured data security with Google’s security protocols, reducing the risks of losing or compromising important documents.</li>
     </ul>
+    <h5 className='text-primary'>KrishiSahayak</h5>
+    <p>A Web App to manage government schemes provided to the farmers. </p>
+    <ul className='ps-2'>
+      <li className='pb-2'>Developed <strong>KrishiSahayak</strong>, A platform to simplify the implementation and management of government schemes for farmers.</li>
+      <li className='pb-2'>Used <strong>Google Firebase</strong> as the backend to handle user authentication, <strong>Role-based access</strong> for admin and users.Admins can post schemes, view applicants, and approve/reject applications. Users can browse schemes, view detailed information, and apply via customizable forms.</li>
+      <li className='pb-2'>Integrated <strong>Firebase Realtime Database</strong> for Real-time updates of application status.</li>
+      <li className='pb-2'>used <strong>React.js</strong> for a responsive and dynamic user interface. Focus on improving scheme accessibility for farmers.
+      Scalable architecture with seamless admin-user interaction.</li>
+    </ul>
     </div>
 
     <hr />
