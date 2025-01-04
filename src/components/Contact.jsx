@@ -14,32 +14,33 @@ const validationSchema = Yup.object({
   user_phone: Yup.string()
     .matches(/^[0-9]{10}$/, 'Phone number must be 10 digits')
     .required('Phone number is required'),
-  message: Yup.string().required('Message is required'),
+  message: Yup.string().min(10, 'Message must be at least 10 characters').required('Message is required'),
 });
 
-const sendEmail = (values, actions) => {
-  emailjs
-    .send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID, // Replace with your service ID
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Replace with your template ID
-      values,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Replace with your public key
-    )
-    .then(
-      (result) => {
-        console.log('Email sent successfully:', result.text);
-        alert('Message sent!');
-        actions.resetForm(); // Reset form after successful submission
-      },
-      (error) => {
-        console.error('Error sending email:', error.text);
-        alert('Failed to send the message, please try again.');
+  // Submit handler
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        alert('Email sent successfully!');
+        resetForm(); // Clear the form after successful submission
+      } else {
+        const error = await response.json();
+        alert(`Failed to send email: ${error.message}`);
       }
-    )
-    .finally(() => {
-      actions.setSubmitting(false); // Stop the loading spinner
-    });
-};
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <div>
       <h3 className="display-6 mb-3 pb-3 text-center">Hire Me</h3>
@@ -51,7 +52,7 @@ const sendEmail = (values, actions) => {
         message: '',
       }}
       validationSchema={validationSchema}
-      onSubmit={sendEmail}
+      onSubmit={handleSubmit}
     >
       {({ isSubmitting }) => (
         <Form>
