@@ -20,10 +20,10 @@ const validationSchema = Yup.object({
 const sendEmail = (values, actions) => {
   emailjs
     .send(
-      process.env.EMAILJS_SERVICE_ID, // Replace with your service ID
-      process.env.EMAILJS_TEMPLATE_ID, // Replace with your template ID
+      process.env.REACT_APP_EMAILJS_SERVICE_ID, // Replace with your service ID
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Replace with your template ID
       values,
-      process.env.EMAILJS_PUBLIC_KEY // Replace with your public key
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Replace with your public key
     )
     .then(
       (result) => {
