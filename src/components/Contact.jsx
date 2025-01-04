@@ -5,11 +5,6 @@ import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-// const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-// const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
-console.log(serviceId); // Use these variables
 
 const validationSchema = Yup.object({
   user_name: Yup.string().required('Name is required'),
@@ -25,10 +20,10 @@ const validationSchema = Yup.object({
 const sendEmail = (values, actions) => {
   emailjs
     .send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID, // Replace with your service ID
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Replace with your template ID
+      process.env.EMAILJS_SERVICE_ID, // Replace with your service ID
+      process.env.EMAILJS_TEMPLATE_ID, // Replace with your template ID
       values,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Replace with your public key
+      process.env.EMAILJS_PUBLIC_KEY // Replace with your public key
     )
     .then(
       (result) => {
