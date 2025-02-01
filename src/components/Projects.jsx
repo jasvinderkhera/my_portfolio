@@ -10,11 +10,32 @@ import etsy from "./images/etsy.png"
 import taskhive from "./images/task-hive.png"
 import cloudlinker from "./images/cloud-linker.png"
 import krishisahayak from "./images/krishisahayak.png"
+import squidgames from './images/squidgamesunleashed.png'
 
 function Projects() {
   return (
     <div>
       <div className="row project_row">
+        <a
+          href="https://jasvinderkhera.github.io/squid_games/"
+          target="blank"
+          className="col-4 mb-4 project_div nav-link"
+        >
+          <div className="box border border-2">
+            <img
+              src={squidgames}
+              alt=""
+              className="img-fluid project_img text-center"
+            />
+            <a
+              href="https://jasvinderkhera.github.io/squid_games/"
+              target="blank"
+              className="nav-link bg-secondary text-white"
+            >
+              Squid Games Unleashed
+            </a>
+          </div>
+        </a>
         <a
           href="https://basic-crud-frontend-eight.vercel.app/"
           target="blank"
