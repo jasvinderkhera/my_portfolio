@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import cv from '../images/cv.pdf'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import emailjs from '@emailjs/browser';
 
 function Contact() {
 
