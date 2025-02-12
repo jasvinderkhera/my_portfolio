@@ -7,7 +7,7 @@ function Experience() {
    
     <div className="py-2">
     <h4>Unified Mentor</h4>
-    <p>Worked as Web Developer Intern from Oct 2024 to Dec 2024</p>
+    <p>Worked as Web Developer Intern from Jul 2024 to Dec 2024</p>
     <p>Major Projects:</p>
     <h5 className='text-primary'>TaskHive</h5>
     <p>Web Application for Task Management</p>
