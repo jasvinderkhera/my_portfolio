@@ -4,10 +4,14 @@ function Experience() {
   return (
     <div>
     <div className='display-6 mb-3'>Experience</div>
-   
+      <div className="py-2">
+ <h4>Adaan Digital Solutions Pvt. Ltd.</h4>
+    <p>Working as SaaS Web Builder from Mar 2025 to Present</p>
+</div>
+     <hr />
     <div className="py-2">
     <h4>Unified Mentor</h4>
-    <p>Worked as Web Developer Intern from Jan 2024 to Dec 2024</p>
+    <p>Worked as Web Developer Intern from Oct 2024 to Dec 2024</p>
     <p>Major Projects:</p>
     <h5 className='text-primary'>TaskHive</h5>
     <p>Web Application for Task Management</p>
